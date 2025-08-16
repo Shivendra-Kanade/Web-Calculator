@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Weather Forecast</h1>
+    <p>Plain colors only (no images).</p>
+  </header>
+
+  <main class="card">
+    <form action="/forecast" method="get" class="form">
+      <label>City
+        <input name="city" placeholder="e.g., Pune" required>
+      </label>
+      <label>Country Code
+        <input name="country" placeholder="e.g., IN (optional)">
+      </label>
+      <label>Units
+        <select name="units">
+          <option value="metric" selected>Metric (°C)</option>
+          <option value="imperial">Imperial (°F)</option>
+        </select>
+      </label>
+      <button type="submit">Get 5‑Day Forecast</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <small>Single‑folder Java app · no frameworks · no images</small>
+  </footer>
+</body>
+</html>
